@@ -1,0 +1,1 @@
+C:\Users\Trisha\OneDrive\Documents\Humber\Sem 4\Design Patterns\project\HotelsDotCom\HotelsDotCom.Tests\obj\Debug\HotelsDotCom.Tests.csprojResolveAssemblyReference.cache
