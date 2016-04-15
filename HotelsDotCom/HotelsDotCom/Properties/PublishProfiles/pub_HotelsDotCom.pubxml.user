@@ -295,7 +295,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/13/2016 15:53:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/14/2016 20:34:20</publishTime>
+      <publishTime>04/14/2016 20:40:25</publishTime>
     </File>
     <File Include="Web.sitemap">
       <publishTime>04/14/2016 20:17:47</publishTime>
