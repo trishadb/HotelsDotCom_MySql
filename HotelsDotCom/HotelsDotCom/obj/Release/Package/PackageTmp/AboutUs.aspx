@@ -3,5 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder1" runat="server">
     <h2>About Us</h2>
-    <p>THis page is under construction</p>
+    <p>This page is under construction</p>
 </asp:Content>

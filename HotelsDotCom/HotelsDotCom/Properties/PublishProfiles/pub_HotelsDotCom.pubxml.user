@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="AboutUs.aspx">
-      <publishTime>04/14/2016 19:22:09</publishTime>
+      <publishTime>04/14/2016 19:26:43</publishTime>
     </File>
     <File Include="Account/AddPhoneNumber.aspx">
       <publishTime>04/13/2016 15:53:45</publishTime>
@@ -79,7 +79,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/13/2016 15:53:49</publishTime>
     </File>
     <File Include="bin/HotelsDotCom.dll">
-      <publishTime>04/14/2016 19:24:30</publishTime>
+      <publishTime>04/14/2016 20:34:19</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
       <publishTime>04/13/2016 15:53:42</publishTime>
@@ -283,7 +283,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/13/2016 16:13:18</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>04/14/2016 19:20:12</publishTime>
+      <publishTime>04/14/2016 20:28:56</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
       <publishTime>04/13/2016 15:53:44</publishTime>
@@ -295,10 +295,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/13/2016 15:53:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/14/2016 19:24:31</publishTime>
+      <publishTime>04/14/2016 20:34:20</publishTime>
     </File>
     <File Include="Web.sitemap">
-      <publishTime>04/13/2016 17:20:29</publishTime>
+      <publishTime>04/14/2016 20:17:47</publishTime>
     </File>
   </ItemGroup>
 </Project>
