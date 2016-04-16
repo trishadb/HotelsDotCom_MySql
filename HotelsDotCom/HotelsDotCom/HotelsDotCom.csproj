@@ -181,6 +181,7 @@
     <Content Include="Reserve.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\Raleway-Regular.ttf" />
     <None Include="Properties\PublishProfiles\pub_HotelsDotCom.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
@@ -214,6 +215,10 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="Styles\animate.css" />
+    <Content Include="Styles\fonts.css" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Styles\content.css" />
     <Content Include="UserAccount.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">

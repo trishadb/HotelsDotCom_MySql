@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserAccount.aspx.cs" Inherits="HotelsDotCom.UserAccount" MasterPageFile="~/Site.Master"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserAccount.aspx.cs" Inherits="HotelsDotCom.UserAccount" MasterPageFile="~/Site.Master" %>
 
 <%--this is view reservations from jeff's file--%>
 
@@ -7,14 +7,15 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder1" runat="server">
-    <h2>Your Reservations</h2>
+    <div class="formGroup userGroup frm-1 fadeIn animated">
+        <h2>Your Reservations</h2>
 
-    <asp:RadioButtonList ID="rblist1" runat="server">
-    </asp:RadioButtonList>
-    <asp:Button ID="btnDelete" runat="server" Text="Delete"
-        CssClass="button" OnClick="btnDelete_Click" />&nbsp;
+        <asp:RadioButtonList CssClass="radio" ID="rblist1" runat="server"></asp:RadioButtonList>
 
-     <asp:Button ID="btnLogOut" runat="server" Text="Log out"
-         CssClass="button" OnClick="btnLogOut_Click"/>&nbsp;
+        <div class="btnGroup btnUserGroup">
+            <asp:Button ID="btnDelete" runat="server" Text="Delete" CssClass="button btn-1 fadeInDown animated" OnClick="btnDelete_Click" />
+            <asp:Button ID="btnLogOut" runat="server" Text="Log out" CssClass="button btn-1 fadeInDown animated" OnClick="btnLogOut_Click" />
+        </div>
+    </div>
 </asp:Content>
 

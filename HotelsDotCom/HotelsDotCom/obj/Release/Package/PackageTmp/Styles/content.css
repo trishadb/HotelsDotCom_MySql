@@ -1,0 +1,93 @@
+﻿/* styles for the elements */
+label {
+    margin-right: 3em;
+}
+
+input {
+    margin-bottom: .5em;
+}
+
+select {
+    margin-bottom: 4em;
+    width: 7em;
+}
+
+textarea {
+    height: 5em;
+    width: 25em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    margin-bottom: .5em;
+}
+/* styles for the class selectors */
+.label {
+    display: block;
+    margin: 0px;
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding: 15px;
+}
+
+.button {
+    color: #575960;
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: 2px solid #575960;
+    font-size: 1em;
+    margin: 15px;
+    margin-top: 50px;
+    padding: 5px 10px 5px 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btnGroup {
+    margin: 0 auto;
+    position: relative;
+    margin-left: 50%;
+}
+
+.validator {
+    color: red;
+}
+/* styles for the ID selectors */
+.txtGroup {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.ddl {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    width: 215px;
+    height: 40px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.radio {
+    padding: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.reserve {
+    margin-top: 5%;
+    position: relative;
+}
+
+.userGroup {
+    width: 85%;
+}
+
+.btnUserGroup {
+    margin-left: 30%;
+}

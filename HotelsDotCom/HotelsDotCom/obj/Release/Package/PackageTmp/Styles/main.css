@@ -1,0 +1,56 @@
+﻿@import url(fonts.css);
+@import url(animate.css);
+
+body {
+    margin: 0 auto;
+    width: 60%;
+    padding: 5px;
+    font-family: Raleway, sans-serif;
+    font-size: 1.3em;
+    color: #575960;
+}
+
+
+
+#mainMenu {
+    margin-bottom: .5em;
+    margin-left: 33%;
+    position: relative;
+
+}
+
+    #mainMenu a {
+        text-decoration: none;
+    }
+
+#mapPath {
+    padding-left: 1em;
+    margin-bottom: .5em;
+    margin-left: 33%;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 30px;
+    font-size: 2em;
+}
+
+.formGroup{
+    margin: 0 auto;
+    padding: 10px;
+    margin-left: 10%;
+    position: relative;
+    width: 60%;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-right: 2em;
+    padding-bottom: .1em;
+    text-align: right;
+}

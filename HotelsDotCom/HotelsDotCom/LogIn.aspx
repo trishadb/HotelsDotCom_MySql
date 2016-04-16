@@ -1,38 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="HotelsDotCom.LogIn" MasterPageFile="~/Site.Master"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="HotelsDotCom.LogIn" MasterPageFile="~/Site.Master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPlaceHolder" runat="server">
-    <!--CSS HERE-->
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder1" runat="server">
 
-    <div id="body">
+    <div class="formGroup">
+        <label class="label lbl-1 fadeInLeft animated">User name</label>
+        <asp:TextBox CssClass="txtGroup txtDdl-2 fadeInUp animated" ID="txtName" runat="server"></asp:TextBox>
+        <br />
 
-        <hgroup class="title">
-            <h2>Log in</h2>
-        </hgroup>
-        <section id="loginForm">
-            <h2>Use a local account to log in.</h2>
+        <label class="label lbl-2 fadeInLeft animated">Password</label>
+        <asp:TextBox CssClass="txtGroup txtDdl-1 fadeInUp animated" ID="txtPassword" TextMode="Password" runat="server"></asp:TextBox>
+        <br />
 
-            <p class="validation-summary-errors">
-            </p>
-            <fieldset>
-                <legend>Log in Form</legend>
-                <ol>
-                    <li>
-                        <label for="txtName">User name</label>
-                        <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-
-                    </li>
-                    <li>
-                        <label for="txtPassword">Password</label>
-                        <asp:TextBox ID="txtPassword" TextMode="Password" runat="server"></asp:TextBox>
-                    </li>
-
-                </ol>
-                <asp:Button ID="btnLogIn" runat="server" Text="Login"
-                    CssClass="button" OnClick="btnLogIn_Click"/>&nbsp;
-            </fieldset>
-        </section>
+        <div class="btnGroup">
+            <asp:Button CssClass="button btn-1 fadeInDown animated" ID="btnLogIn" runat="server" Text="Login"  OnClick="btnLogIn_Click" />
+        </div>
     </div>
 </asp:Content>

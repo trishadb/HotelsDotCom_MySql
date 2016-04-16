@@ -13,13 +13,13 @@ namespace HotelsDotCom {
     public partial class Site_Mobile {
         
         /// <summary>
-        /// HeadContent control.
+        /// headPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder headPlaceHolder;
         
         /// <summary>
         /// form1 control.
@@ -40,12 +40,12 @@ namespace HotelsDotCom {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder FeaturedContent;
         
         /// <summary>
-        /// MainContent control.
+        /// contentPlaceHolder1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentPlaceHolder1;
     }
 }
