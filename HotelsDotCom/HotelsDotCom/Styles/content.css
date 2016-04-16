@@ -85,3 +85,12 @@ select {
 .btnUserGroup {
     margin-left: 30%;
 }
+
+.validator{
+    color: #cc0000;
+}
+
+#valid{
+    position: relative;
+    margin-left: 45%;
+}

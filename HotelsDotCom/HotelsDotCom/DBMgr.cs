@@ -205,8 +205,8 @@ namespace HotelsDotCom
             {
                 sqlStr = "insert into reservation (c_id, h_name, r_type, start_date, end_date, quantity) values "
                         + "(" + c_id + ", '" + h_name + "', '" + r_type + "', "
-                        + "str_to_date('" + starting + "','%m/%d/%Y'), "
-                        + "str_to_date('" + ending + "','%m/%d/%Y'), " + quantity + ")";
+                        + "str_to_date('" + starting + "','%Y-%m-%d'), "
+                        + "str_to_date('" + ending + "','%Y-%m-%d'), " + quantity + ")";
                 cmd = new MySqlCommand(sqlStr, conn);
                 cmd.ExecuteReader();
             }

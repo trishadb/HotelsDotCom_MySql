@@ -55,8 +55,14 @@
             resp.Write("<br>");    
         %>
         <asp:RadioButtonList CssClass="radio" ID="radList" runat="server"></asp:RadioButtonList>
+            <asp:RequiredFieldValidator ID="rfvRadList" runat="server" 
+                ErrorMessage="Select a hotel" ControlToValidate="radList" Display="None" ></asp:RequiredFieldValidator>
+        
         <div class="btnGroup">
             <asp:Button CssClass="button btn-1 fadeInDown animated" ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" />
+        </div>
+        <div id="valid">
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="validator" Font-Size="0.8em" />
         </div>
     </div>
 </asp:Content>

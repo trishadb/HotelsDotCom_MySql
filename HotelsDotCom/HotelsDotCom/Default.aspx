@@ -15,14 +15,14 @@
         <asp:RequiredFieldValidator ID="rfvArrivalDate" runat="server"
             ControlToValidate="txtArrivalDate"
             Text="*" CssClass="validator"
-            Display="Dynamic" ErrorMessage="Enter check in date" Font-Bold="False"> </asp:RequiredFieldValidator>
+            Display="Dynamic" ErrorMessage="Enter check in date" Font-Bold="False" ForeColor="#CC0000"> </asp:RequiredFieldValidator>
         <asp:CompareValidator ID="cvArrivalDate" runat="server"
             Text="*"
             CssClass="validator"
             Display="Dynamic"
             ControlToValidate="txtArrivalDate"
             Type="Date"
-            Operator="DataTypeCheck" ErrorMessage="Must be a valid date"> </asp:CompareValidator>
+            Operator="DataTypeCheck" ErrorMessage="Must be a valid date" ForeColor="#CC0000"> </asp:CompareValidator>
 
         <br />
 
@@ -31,17 +31,20 @@
         <asp:RequiredFieldValidator ID="rfvDepartureDate" runat="server"
             ControlToValidate="txtDepartureDate"
             Text="*" CssClass="validator"
-            Display="Dynamic" ErrorMessage="Enter check out date"></asp:RequiredFieldValidator>
+            Display="Dynamic" ErrorMessage="Enter check out date" ForeColor="#CC0000"></asp:RequiredFieldValidator>
         <asp:CompareValidator ID="cvDepartureDate" runat="server"
             Display="Dynamic"
             Text="*"
             CssClass="validator"
             ControlToValidate="txtDepartureDate"
             Type="Date" Operator="GreaterThan"
-            ControlToCompare="txtArrivalDate" ErrorMessage="Must be after arrival date"> </asp:CompareValidator>
+            ControlToCompare="txtArrivalDate" ErrorMessage="Must be after arrival date" ForeColor="#CC0000"> </asp:CompareValidator>
 
         <div class="btnGroup btn-1 fadeInDown animated">
             <asp:Button ID="btnSearch" CssClass="button" runat="server" Text="Search" OnClick="btnSearch_Click" />
+        </div>
+        <div id="valid">
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="validator" Font-Size="0.8em" />
         </div>
     </div>
 </asp:Content>
