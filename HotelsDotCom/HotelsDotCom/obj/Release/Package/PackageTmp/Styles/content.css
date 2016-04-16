@@ -12,13 +12,6 @@ select {
     width: 7em;
 }
 
-textarea {
-    height: 5em;
-    width: 25em;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100%;
-    margin-bottom: .5em;
-}
 /* styles for the class selectors */
 .label {
     display: block;
@@ -27,6 +20,7 @@ textarea {
     width: 50%;
     text-align: right;
     padding: 15px;
+    padding-top: 25px;
 }
 
 .button {
@@ -57,19 +51,19 @@ textarea {
 /* styles for the ID selectors */
 .txtGroup {
     font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    width: 200px;
+    font-size: .9em;
+    width: 230px;
     height: 20px;
-    padding: 5px;
+    padding: 10px;
     margin: 15px;
 }
 
 .ddl {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    width: 215px;
-    height: 40px;
-    padding: 5px;
+    width: 252px;
+    height: 50px;
+    padding: 3px;
     margin: 15px;
 }
 

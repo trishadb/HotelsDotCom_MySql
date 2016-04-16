@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HotelsDotCom.SiteMaster" ClientIDMode="Static"%>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HotelsDotCom.SiteMaster" ClientIDMode="Static" %>
 
 <!DOCTYPE html>
 
@@ -12,29 +12,34 @@
 </head>
 <body>
     <header>
-        <h1>Hotels</h1>
+        <h1>HotelsDotCom</h1>
     </header>
 
     <section>
         <form id="formMaster" runat="server">
             <!--menu-->
             <div class="menuGroup">
-                <asp:Menu ID="mainMenu" runat="server" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" DataSourceID="SiteMapDataSource1" StaticSubMenuIndent="16px" ForeColor="#575960">
-                    <DynamicMenuItemStyle HorizontalPadding="20px"/>
-                    <StaticMenuItemStyle HorizontalPadding="20px"/>
+                <asp:Menu ID="mainMenu" runat="server" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" DataSourceID="SiteMapDataSource1" ForeColor="#575960">
+                    <DynamicHoverStyle Font-Bold="True" Font-Underline="False" />
+                    <DynamicMenuItemStyle HorizontalPadding="20px" />
+                    <StaticHoverStyle Font-Bold="True" Font-Strikeout="False" Font-Underline="False" />
+                    <StaticMenuItemStyle HorizontalPadding="20px" />
                 </asp:Menu>
+            </div>
             <!--menu datasource-->
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
-            </div>
 
-            
-             <!--menu site path-->
+            <!--menu site path-->
             <div id="mapPath">
-                <asp:SiteMapPath ID="SiteMapPath1" runat="server" OnItemCreated="SiteMapPath1_ItemCreated">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator=" : : " ForeColor="#575960">
+                    <CurrentNodeStyle Font-Bold="True" ForeColor="#575960" />
+                    <PathSeparatorStyle Font-Bold="True" ForeColor="#575960" />
+                    <RootNodeStyle Font-Underline="False" ForeColor="#575960" />
                 </asp:SiteMapPath>
             </div>
+            <br />
 
-             <!--content here-->
+            <!--content here-->
             <asp:ContentPlaceHolder ID="contentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </form>
