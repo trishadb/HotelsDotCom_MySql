@@ -19,10 +19,12 @@ namespace HotelsDotCom
             h_name = null;
             r_type = null;
             quantity = 0;
+
         }
 
         public String H_name { get; set; }
         public String R_type { get; set; }
         public int Quantity { get; set; }
+        public int AvailableRooms { get; set; }
     }
 }

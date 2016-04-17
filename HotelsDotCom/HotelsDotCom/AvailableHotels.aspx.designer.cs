@@ -13,48 +13,39 @@ namespace HotelsDotCom {
     public partial class AvailableHotels {
         
         /// <summary>
-        /// lstTemp control.
+        /// lblDestination control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lstTemp;
+        protected global::System.Web.UI.WebControls.Label lblDestination;
         
         /// <summary>
-        /// radList control.
+        /// lblStart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList radList;
+        protected global::System.Web.UI.WebControls.Label lblStart;
         
         /// <summary>
-        /// rfvRadList control.
+        /// lblEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRadList;
+        protected global::System.Web.UI.WebControls.Label lblEnd;
         
         /// <summary>
-        /// btnAdd control.
+        /// lstView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
-        
-        /// <summary>
-        /// ValidationSummary1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+        protected global::System.Web.UI.WebControls.ListView lstView;
     }
 }

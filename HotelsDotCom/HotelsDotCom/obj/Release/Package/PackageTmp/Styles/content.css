@@ -94,3 +94,30 @@ select {
     position: relative;
     margin-left: 45%;
 }
+
+/*table*/
+table{
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    border-spacing: 8px;
+}
+
+.thead{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+th, td, tr {
+    font-size: 1.1em;
+    border: 2px solid #575960;
+    padding: 10px 20px 10px 20px;
+    border-collapse: separate;
+    text-align: center;       
+    background: transparent;
+}
+
+.tbl{
+    margin-left: 15%;
+}
+/*table*/

@@ -100,4 +100,3 @@ C:\Users\Trisha\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\bi
 C:\Users\Trisha\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Trisha\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\obj\Debug\HotelsDotCom.dll
 C:\Users\Trisha\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\obj\Debug\HotelsDotCom.pdb
-C:\Users\Trisha\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\obj\Debug\HotelsDotCom.csprojResolveAssemblyReference.cache
