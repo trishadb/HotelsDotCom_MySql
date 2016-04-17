@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,11 +8,28 @@ using System.Web.UI.WebControls;
 
 namespace HotelsDotCom
 {
+    public class Person {
+        public string name { get; set; }
+        public string age { get; set; }
+    }
     public partial class AvailableHotels : System.Web.UI.Page
     {
+
         private List<HotelRoomQuantity> hotels;
         protected void Page_Load(object sender, EventArgs e)
         {
+            List<Person> pers = new List<Person>() { 
+                new Person(){name = "Trisha", age = "4"},
+                new Person(){name = "Denise", age = "5"}
+            
+            };
+
+            DBMgr mgr = new DBMgr();
+
+            ArrayList cityList = mgr.getCities();
+            lstTemp.DataSource = cityList;
+            lstTemp.DataBind();
+
             //private reservation = (Reservation)Session["Reservation"];
             Search search = (Search)HttpContext.Current.Session["search"]; //I can not use private to define search
             //Response.Write(search.StartingDate); //4/2/2016 

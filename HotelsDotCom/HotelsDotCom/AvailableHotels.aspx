@@ -6,6 +6,22 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder1" runat="server">
     <div class="formGroup frm-1 fadeIn animated">
+        <asp:ListView runat="server" ID="lstTemp">
+            <LayoutTemplate>
+                <ul>
+                    <li runat="server" id="itemplaceholder"></li>
+
+                </ul>
+
+            </LayoutTemplate>
+            <ItemTemplate>
+                <li>
+                    <%#Eval("cities") %>
+                </li>
+            </ItemTemplate>
+
+
+        </asp:ListView>
         <h2>Room Availability</h2>
         <%
             HttpContext cont = HttpContext.Current;
@@ -55,9 +71,9 @@
             resp.Write("<br>");    
         %>
         <asp:RadioButtonList CssClass="radio" ID="radList" runat="server"></asp:RadioButtonList>
-            <asp:RequiredFieldValidator ID="rfvRadList" runat="server" 
-                ErrorMessage="Select a hotel" ControlToValidate="radList" Display="None" ></asp:RequiredFieldValidator>
-        
+        <asp:RequiredFieldValidator ID="rfvRadList" runat="server"
+            ErrorMessage="Select a hotel" ControlToValidate="radList" Display="None"></asp:RequiredFieldValidator>
+
         <div class="btnGroup">
             <asp:Button CssClass="button btn-1 fadeInDown animated" ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" />
         </div>
