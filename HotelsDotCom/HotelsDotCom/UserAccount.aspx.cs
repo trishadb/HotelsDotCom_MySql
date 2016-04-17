@@ -14,7 +14,7 @@ namespace HotelsDotCom
             if (!IsPostBack)
             {
                 int user_id = (int)Session["user_id"];
-                DBMgr dbm = new DBMgr();
+                DBMgr_Jeff dbm = DBMgr_Jeff.getInstance();
 
                 List<Reservation> hotels = dbm.getReservations(user_id);
                 //Add items to DropDown
@@ -26,7 +26,8 @@ namespace HotelsDotCom
                         Text = hotels[i].r_id + " / " + hotels[i].c_id
                         + " / " + hotels[i].h_name + " / " + hotels[i].r_type
                         + " / " + hotels[i].starting + " / " + hotels[i].ending
-                        + " / " + hotels[i].quantity,
+                        + " / " + hotels[i].quantity
+                        + " / " + hotels[i].spDescription + " / " + hotels[i].spCost,
                     };
                     rblist1.Items.Add(newItem);
                 }
@@ -46,6 +47,13 @@ namespace HotelsDotCom
             Session.Clear();
             Response.Redirect("Default.aspx");
         }
+
+        protected void btnAddSP_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("SpecialRequirements.aspx?r_id="+rblist1.SelectedValue);
+        }
+
+
 
     }
 }

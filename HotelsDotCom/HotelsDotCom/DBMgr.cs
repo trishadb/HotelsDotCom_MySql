@@ -172,9 +172,18 @@ namespace HotelsDotCom
             List<HotelRoomQuantity> hotels = new List<HotelRoomQuantity>();
             try
             {
+                //2016/4/23
+                /*
                 sqlStr = "select h_name, r_type, sum(quantity) as r_booked from reservation "
                        + "where h_name in (select h_name from hotel where city = '" + desti + "') and "
                        + "(start_date<= str_to_date('" + starting + "','MM/DD/YY') and end_date > str_to_date('" + starting + "','MM/DD/YY')) "
+                       + "group by h_name, r_type";
+                */
+                //2016/4/23 is turned into "4/23/2016" 
+                //'%m/%d/%Y', y has to be captilized
+                sqlStr = "select h_name, r_type, sum(quantity) as r_booked from reservation "
+                       + "where h_name in (select h_name from hotel where city = '" + desti + "') and "
+                       + "(start_date<= str_to_date('" + starting + "','%m/%d/%Y') and end_date > str_to_date('" + starting + "','%m/%d/%Y')) "
                        + "group by h_name, r_type";
                 cmd = new MySqlCommand(sqlStr, conn);
                 rdr = cmd.ExecuteReader();
@@ -203,12 +212,21 @@ namespace HotelsDotCom
             int result = -1;
             try
             {
+                //res_id,
+                //55556, 
+                /*
+                sqlStr = "insert into reservation ( c_id, h_name, r_type, start_date, end_date, quantity) values "
+                        + "(" + c_id + ", '" + h_name + "', '" + r_type + "', "
+                        + "'" + starting + "', "
+                        + "'" + ending + "', " + quantity + ")";
+                */
                 sqlStr = "insert into reservation (c_id, h_name, r_type, start_date, end_date, quantity) values "
                         + "(" + c_id + ", '" + h_name + "', '" + r_type + "', "
-                        + "str_to_date('" + starting + "','%Y-%m-%d'), "
-                        + "str_to_date('" + ending + "','%Y-%m-%d'), " + quantity + ")";
+                        + "str_to_date('" + starting + "','%Y/%m/%d'), "
+                        + "str_to_date('" + ending + "','%Y/%m/%d'), " + quantity + ")";
+
                 cmd = new MySqlCommand(sqlStr, conn);
-                cmd.ExecuteReader();
+                result = cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {

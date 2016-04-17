@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reserve.aspx.cs" Inherits="HotelsDotCom.Reserve" MasterPageFile="~/Site.Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reserve.aspx.cs" 
+    Inherits="HotelsDotCom.Reserve" MasterPageFile="~/Site.Master" %>
 
 <%@ Import Namespace="HotelsDotCom" %>
 

@@ -19,6 +19,7 @@
         <div class="btnGroup btnUserGroup">
             <asp:Button ID="btnDelete" runat="server" Text="Delete" CssClass="button btn-1 fadeInDown animated" OnClick="btnDelete_Click" ValidationGroup="required" />
             <asp:Button ID="btnLogOut" runat="server" Text="Log out" CssClass="button btn-1 fadeInDown animated" OnClick="btnLogOut_Click" />
+            <asp:Button ID="btnAddSP" runat="server" Text="Extra Requirements" CssClass="button btn-1 fadeInDown animated" OnClick="btnAddSP_Click"  />
         </div>
     </div>
 </asp:Content>

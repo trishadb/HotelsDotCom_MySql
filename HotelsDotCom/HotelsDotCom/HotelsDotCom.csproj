@@ -205,6 +205,7 @@
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Jeff_test.aspx" />
     <Content Include="LogIn.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -250,6 +251,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="SpecialRequirements.aspx" />
     <Content Include="Styles\animate.css" />
     <Content Include="Styles\fonts.css" />
     <Content Include="Styles\main.css" />
@@ -405,6 +407,8 @@
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="DBMgr.cs" />
+    <Compile Include="DBMgr_Jeff.cs" />
+    <Compile Include="Decorator.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -412,6 +416,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Flower.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -420,6 +425,13 @@
     <Compile Include="HotelRoomQuantity.cs" />
     <Compile Include="HotelRoomQuantityList.cs" />
     <Compile Include="HotelRoomQuantityListList.cs" />
+    <Compile Include="Jeff_test.aspx.cs">
+      <DependentUpon>Jeff_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jeff_test.aspx.designer.cs">
+      <DependentUpon>Jeff_test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -427,6 +439,7 @@
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Massage.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservation.cs" />
@@ -438,7 +451,9 @@
       <DependentUpon>Reserve.aspx</DependentUpon>
     </Compile>
     <Compile Include="Room.cs" />
+    <Compile Include="RoomService.cs" />
     <Compile Include="Search.cs" />
+    <Compile Include="Shuttle.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -452,6 +467,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialRequirements.aspx.cs">
+      <DependentUpon>SpecialRequirements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpecialRequirements.aspx.designer.cs">
+      <DependentUpon>SpecialRequirements.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="UserAccount.aspx.cs">

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HotelsDotCom
 {
-    public class Reservation
+    public class Reservation: Decorator
     {
         public Reservation()
         {
@@ -21,5 +21,17 @@ namespace HotelsDotCom
         public string starting { get; set; }
         public string ending { get; set; }
         public int quantity { get; set; }
+        public decimal spCost { get; set; }
+        public String spDescription { get; set; }
+
+        public decimal cost()
+        {
+            return 0;
+        }
+
+        public String specialRequirement()
+        {
+            return "";
+        }
     }
 }
