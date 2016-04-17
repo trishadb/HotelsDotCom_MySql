@@ -65,9 +65,9 @@ namespace HotelsDotCom
             int result = -1;
             try
             {
-                sqlStr = " insert into special_requirements values( "+res_id+", '"+des+"', "+price+")";
+                sqlStr = " insert into special_requirements values( " + res_id + ", '" + des + "', " + price + ")";
                 cmd = new MySqlCommand(sqlStr, conn);
-                result = cmd.ExecuteNonQuery(); 
+                result = cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -215,7 +215,7 @@ quantity / int(1) / 0
                     hrq.ending = rdr["end_date"].ToString();
                     hrq.quantity = Convert.ToInt32(rdr["quantity"]);
                     hrq.spDescription = rdr["description"].ToString();
-                    hrq.spCost = Convert.ToDecimal( rdr["nn_price"]);
+                    hrq.spCost = Convert.ToDecimal(rdr["nn_price"]);
                     reservations.Add(hrq);
                 }
                 rdr.Close();
