@@ -13,39 +13,39 @@ namespace HotelsDotCom {
     public partial class AvailableHotels {
         
         /// <summary>
-        /// radList control.
+        /// lblDestination control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList radList;
+        protected global::System.Web.UI.WebControls.Label lblDestination;
         
         /// <summary>
-        /// rfvRadList control.
+        /// lblStart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRadList;
+        protected global::System.Web.UI.WebControls.Label lblStart;
         
         /// <summary>
-        /// btnAdd control.
+        /// lblEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
+        protected global::System.Web.UI.WebControls.Label lblEnd;
         
         /// <summary>
-        /// ValidationSummary1 control.
+        /// lstView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+        protected global::System.Web.UI.WebControls.ListView lstView;
     }
 }

@@ -5,9 +5,57 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder1" runat="server">
-    <div class="formGroup frm-1 fadeIn animated">
+    <div class="titleContent frm-1 fadeIn animated">
         <h2>Room Availability</h2>
-        <%
+        <h4>Available hotels in
+            <asp:Label ID="lblDestination" runat="server"></asp:Label>
+            during
+            <asp:Label ID="lblStart" runat="server"></asp:Label>
+            to
+            <asp:Label ID="lblEnd" runat="server"></asp:Label>
+        </h4>
+    </div>
+    <div class="formGroup frm-1 fadeIn animated">
+        <asp:ListView runat="server" ID="lstView" OnItemCommand="lstView_ItemCommand" OnItemDataBound="lstView_ItemDataBound">
+            <LayoutTemplate>
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <td>Hotel Name</td>
+                            <td>Room Type</td>
+                            <td>Quantity</td>
+                            <td>Available Rooms</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr runat="server" id="itemplaceholder">
+                        </tr>
+                    </tbody>
+                </table>
+
+            </LayoutTemplate>
+            <ItemTemplate>
+                <tr>
+                    <td>
+                        <%#Eval("H_name") %>
+                    </td>
+                    <td>
+                        <%#Eval("R_type") %>
+                    </td>
+                    <td>
+                        <%#Eval("TotalRooms") %>
+                    </td>
+                    <td>
+                        <%#Eval("AvailableRooms") %>
+                    </td>
+                    <td>
+                        <asp:Button ID="btnSelect" runat="server" Text="Select" CommandName="S" CssClass="button btnSelect" />
+                    </td>
+                </tr>
+            </ItemTemplate>
+        </asp:ListView>
+        <%--        <%
             HttpContext cont = HttpContext.Current;
             HttpResponse resp = cont.Response;
             Search search = (Search)HttpContext.Current.Session["search"]; //I can not use private to define search
@@ -63,6 +111,6 @@
         </div>
         <div id="valid">
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="validator" Font-Size="0.8em" />
-        </div>
+        </div>--%>
     </div>
 </asp:Content>

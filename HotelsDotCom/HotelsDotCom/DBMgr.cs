@@ -331,5 +331,34 @@ namespace HotelsDotCom
 
 
         }
+
+        public HotelRoomQuantity getSelectdHotelRoom(string selectedItem)
+        {
+            HotelRoomQuantity hrq = new HotelRoomQuantity();
+            try
+            {
+                sqlStr = "select cap.h_name, cap.r_type, count(r_id) as r_cap "
+                    + "from room cap "
+                    + "join hotel on hotel.h_name = cap.H_NAME "
+                    + "where concat_ws('-',cap.h_name,cap.r_type) = '" + selectedItem + "' "
+                    + "group by cap.H_NAME, cap.r_type "
+                    + "order by cap.h_name";
+
+                cmd = new MySqlCommand(sqlStr, conn);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    hrq.H_name = rdr["h_name"].ToString();
+                    hrq.R_type = rdr["r_type"].ToString();
+                    hrq.Quantity = Convert.ToInt32(rdr["r_cap"]);
+                }
+                rdr.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return hrq;
+        }
     }
 }
