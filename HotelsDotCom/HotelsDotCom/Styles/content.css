@@ -30,7 +30,7 @@ select {
     height: auto;
     background: transparent;
     border: 2px solid #575960;
-    font-size: 1em;
+    font-size: .7em;
     margin: 15px;
     margin-top: 50px;
     padding: 5px 10px 5px 10px;
@@ -45,10 +45,18 @@ select {
     margin-left: 50%;
 }
 
+.btnSelect {
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+
+
 .validator {
     color: red;
 }
-/* styles for the ID selectors */
+
+
 .txtGroup {
     font-family: 'Raleway', sans-serif;
     font-size: .9em;
@@ -74,7 +82,9 @@ select {
 }
 
 .reserve {
-    margin-top: 5%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-right: 10%;
     position: relative;
 }
 
@@ -83,14 +93,44 @@ select {
 }
 
 .btnUserGroup {
-    margin-left: 30%;
+    margin-left: 35%;
 }
 
-.validator{
+.validator {
     color: #cc0000;
 }
 
-#valid{
+#valid {
     position: relative;
     margin-left: 45%;
+}
+
+/*table*/
+table {
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    border-spacing: 8px;
+}
+
+.thead {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+th, td, tr {
+    font-size: 1.1em;
+    border: 2px solid #575960;
+    padding: 10px 20px 10px 20px;
+    border-collapse: separate;
+    text-align: center;
+    background: transparent;
+}
+
+/*table*/
+
+.checkAvailContent {
+    margin-right: 10%;
+    margin-top: 2%;
+    position: relative;
 }

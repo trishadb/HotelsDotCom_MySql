@@ -3,7 +3,7 @@
 
 body {
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
     padding: 5px;
     font-family: Raleway, sans-serif;
     font-size: 1.3em;
@@ -14,7 +14,7 @@ body {
 
 #mainMenu {
     margin-bottom: .5em;
-    margin-left: 20%;
+    margin-left: 30%;
     position: relative;
 
 }
@@ -40,9 +40,13 @@ header {
 .formGroup{
     margin: 0 auto;
     padding: 10px;
-    margin-left: 10%;
     position: relative;
-    width: 60%;
+}
+
+.titleContent{
+    margin: 0 auto;
+    margin-left: 20%;
+    position: relative;
 }
 
 footer {

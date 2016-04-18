@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reserve.aspx.cs" 
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reserve.aspx.cs"
     Inherits="HotelsDotCom.Reserve" MasterPageFile="~/Site.Master" %>
 
 <%@ Import Namespace="HotelsDotCom" %>
@@ -7,16 +7,18 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder1" runat="server">
-    <div class="formGroup frm-1 fadeIn animated">
+    <div class="titleContent frm-1 fadeIn animated">
         <h2>Reserve Room</h2>
         <%
             HotelRoomQuantity hotel_room = (HotelRoomQuantity)HttpContext.Current.Session["hotel_room"];
             Response.Write(hotel_room.H_name);
             Response.Write(" / ");
             Response.Write(hotel_room.R_type);
-            Response.Write(" / ");
-            Response.Write(hotel_room.Quantity);
         %>
+    </div>
+
+    <div class="formGroup frm-1 fadeIn animated">
+
         <div class="reserve">
             <label class="label">Number of Rooms</label>
             <asp:DropDownList CssClass="ddl" ID="ddlNoOfRooms" runat="server">
