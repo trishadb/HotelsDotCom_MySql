@@ -13,13 +13,13 @@ namespace HotelsDotCom {
     public partial class LogIn {
         
         /// <summary>
-        /// FormView1 control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// txtName control.

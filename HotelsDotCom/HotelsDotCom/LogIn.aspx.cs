@@ -11,23 +11,42 @@ namespace HotelsDotCom
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Request.Cookies["username"] != null)
+                {
+                    txtName.Text = Request.Cookies["username"].Value;
+                }
+            }
         }
 
         protected void btnLogIn_Click(object sender, EventArgs e)
         {
             String user_name = txtName.Text;
             String psw = txtPassword.Text;
-            DBMgr dbm = new DBMgr();
-            int user_id = dbm.isUser(user_name, psw);
-            if (user_id != -1)
+            bool isValid;
+            try
             {
-                Session["user_id"] = user_id;
-                Response.Redirect("Reserve.aspx");
+                DBMgr dbm = new DBMgr();
+                isValid = dbm.isValidUser(user_name, psw);
+   
+                if (isValid)
+                {
+                    //if (user_id != -1)
+                    //{
+                    int user_id = dbm.isUser(user_name, psw);
+                    Session["user_id"] = user_id;
+                    Response.Redirect("Reserve.aspx");
+                    //}
+                }
+                else
+                {
+                    lblError.Text = "Invalid username or password";
+                   // Response.Redirect("Login.aspx");
+                }
             }
-            else
-            {
-                Response.Redirect("Login.aspx");
+            catch (Exception ex) {
+                throw ex;
             }
         }
     }

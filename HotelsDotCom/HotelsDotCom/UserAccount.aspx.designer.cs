@@ -13,40 +13,13 @@ namespace HotelsDotCom {
     public partial class UserAccount {
         
         /// <summary>
-        /// ValidationSummary1 control.
+        /// linkBtnUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
-        
-        /// <summary>
-        /// rblist1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rblist1;
-        
-        /// <summary>
-        /// rfvReservList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvReservList;
-        
-        /// <summary>
-        /// btnDelete control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDelete;
+        protected global::System.Web.UI.WebControls.LinkButton linkBtnUser;
         
         /// <summary>
         /// btnLogOut control.
@@ -58,12 +31,12 @@ namespace HotelsDotCom {
         protected global::System.Web.UI.WebControls.Button btnLogOut;
         
         /// <summary>
-        /// btnAddSP control.
+        /// rptView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddSP;
+        protected global::System.Web.UI.WebControls.Repeater rptView;
     }
 }

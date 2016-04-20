@@ -15,7 +15,7 @@ namespace HotelsDotCom
         private Search search;
         protected void Page_Load(object sender, EventArgs e)
         {
-         
+
             //private reservation = (Reservation)Session["Reservation"];
             search = (Search)HttpContext.Current.Session["search"]; //I can not use private to define search
             //Response.Write(search.StartingDate); //4/2/2016 
@@ -35,6 +35,10 @@ namespace HotelsDotCom
 
                 //gets available rooms on selected dates
                 List<HotelRoomQuantity> hotelList = getAvailableRooms(starting, ending, destination);
+                if (hotelList.Count == 0)
+                {
+                    lblNoAvail.Text = "No available rooms.";
+                }
 
                 //binds the list of hotels by destination to the list view control
                 lstView.DataSource = hotelList;
@@ -128,7 +132,7 @@ namespace HotelsDotCom
                         hotel.Quantity -= reserved.Quantity;
                         if (hotel.Quantity > 0)
                         {
-                            hotel.AvailableRooms = hotel.Quantity;
+                            hotel.AvailableRooms = hotel.Quantity;            
                             tempHotels.Add(hotel);
                         }
                     }
@@ -136,12 +140,6 @@ namespace HotelsDotCom
                 }
 
             }
-
-
-            //for (int i = 0; i < hotels.Count; i++)
-            //{
-            //    qty = hotels[i].Quantity;
-            //}
                         
             return tempHotels;
         }

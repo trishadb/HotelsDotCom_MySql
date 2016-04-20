@@ -6,7 +6,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder1" runat="server">
 
     <div class="checkAvailContent">
+               <asp:Label ID="lblError" runat="server" ForeColor="Red" CssClass="lblErr"></asp:Label>
         <div class="formGroup">
+       
+         
+          
             <label class="label lbl-1 fadeInLeft animated">User name</label>
             <asp:TextBox CssClass="txtGroup txtDdl-2 fadeInUp animated" ID="txtName" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvUsername" runat="server"
