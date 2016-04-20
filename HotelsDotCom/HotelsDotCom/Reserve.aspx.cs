@@ -9,9 +9,26 @@ namespace HotelsDotCom
 {
     public partial class Reserve : System.Web.UI.Page
     {
+        private int user_id;
+        private DBMgr_Jeff dbmJ;
         protected void Page_Load(object sender, EventArgs e)
         {
+            HotelRoomQuantity hotel_room = (HotelRoomQuantity)HttpContext.Current.Session["hotel_room"];
+            lblSelectedRoom.Text = hotel_room.H_name + " / " + hotel_room.R_type;
 
+            dbmJ = DBMgr_Jeff.getInstance();
+            user_id = (int)Session["user_id"];
+            
+        }
+
+        private void AddCookie()
+        {
+            HttpCookie usernameCookie = new HttpCookie("username");
+            string name = dbmJ.getUser(user_id);
+            usernameCookie.Value = name;
+            usernameCookie.Expires = DateTime.Now.AddMonths(1);
+
+            Response.Cookies.Add(usernameCookie);
         }
 
         protected void btnReserve_Click(object sender, EventArgs e)
@@ -25,10 +42,12 @@ namespace HotelsDotCom
             String starting = search.StartingDate;
             String ending = search.EndingDate;
 
-            int user_id = (int)Session["user_id"];
             dbm.insertReservation(user_id, hotel, r_type, starting, ending, quantity);
-
+            AddCookie();
             Response.Redirect("UserAccount.aspx");
+
         }
+
+
     }
 }

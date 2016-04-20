@@ -258,5 +258,24 @@ quantity / int(1) / 0
             }
             return reservations;
         }
+
+        public string getUser(int c_id)
+        {
+            string usr = "";
+            try
+            {
+                sqlStr = "select f_name from customer where c_id = " + c_id;
+                cmd = new MySqlCommand(sqlStr, conn);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    usr = rdr.GetString(rdr.GetOrdinal("f_name"));
+                }
+
+                rdr.Close();
+            }
+            catch (Exception ex) { throw ex; }
+            return usr;
+        }
     }
 }

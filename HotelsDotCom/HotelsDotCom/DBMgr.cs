@@ -321,7 +321,12 @@ namespace HotelsDotCom
             {
                 sqlStr = "select c_id from customer  where f_name = '" + name + "' and psw='" + psw + "'";
                 cmd = new MySqlCommand(sqlStr, conn);
-                result = Convert.ToInt32(cmd.ExecuteScalar());
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    result = rdr.GetInt32(rdr.GetOrdinal("c_id"));
+                }
+                rdr.Close();
             }
             catch (Exception ex)
             {
@@ -330,6 +335,17 @@ namespace HotelsDotCom
             return result;
 
 
+        }
+
+        public bool isValidUser(String name, String psw)
+        {
+            bool result = true;
+            int i = isUser(name, psw);
+            if (i == -1)
+            {
+                result = false;
+            }
+            return result;
         }
 
         public HotelRoomQuantity getSelectdHotelRoom(string selectedItem)

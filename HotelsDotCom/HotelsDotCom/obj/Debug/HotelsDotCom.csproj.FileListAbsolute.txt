@@ -152,4 +152,3 @@ C:\Users\Jeff_2\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\bi
 C:\Users\Jeff_2\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\obj\Debug\HotelsDotCom.csprojResolveAssemblyReference.cache
 C:\Users\Jeff_2\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\obj\Debug\HotelsDotCom.dll
 C:\Users\Jeff_2\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\obj\Debug\HotelsDotCom.pdb
-C:\Users\Trisha\Documents\GitHub\HotelsDotCom_MySql\HotelsDotCom\HotelsDotCom\obj\Debug\HotelsDotCom.csprojResolveAssemblyReference.cache

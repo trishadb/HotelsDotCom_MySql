@@ -50,6 +50,14 @@ select {
     margin-top: 0px;
 }
 
+.btnUser {
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 1px;
+}
+
 
 
 .validator {
@@ -92,9 +100,6 @@ select {
     width: 85%;
 }
 
-.btnUserGroup {
-    margin-left: 35%;
-}
 
 .validator {
     color: #cc0000;
@@ -127,10 +132,27 @@ th, td, tr {
     background: transparent;
 }
 
+.tbl {
+    font-size: .5em;
+}
+
 /*table*/
 
 .checkAvailContent {
     margin-right: 10%;
     margin-top: 2%;
     position: relative;
+}
+
+.user {
+    margin: 0 auto;
+    position: relative;
+    margin-left: 82%;
+    margin-top: -6%;
+}
+
+.lblErr {
+    position: relative;
+    margin: 0 auto;
+    margin-left: 48%;
 }

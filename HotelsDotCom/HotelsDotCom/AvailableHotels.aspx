@@ -7,18 +7,20 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder1" runat="server">
     <div class="titleContent frm-1 fadeIn animated">
         <h2>Room Availability</h2>
-        <h4>Available hotels in
+        <h4>Going to 
             <asp:Label ID="lblDestination" runat="server"></asp:Label>
-            during
+            from
             <asp:Label ID="lblStart" runat="server"></asp:Label>
             to
             <asp:Label ID="lblEnd" runat="server"></asp:Label>
         </h4>
+        <asp:Label ID="lblNoAvail" runat="server"></asp:Label>
     </div>
+
     <div class="formGroup frm-1 fadeIn animated">
         <asp:ListView runat="server" ID="lstView" OnItemCommand="lstView_ItemCommand" OnItemDataBound="lstView_ItemDataBound">
             <LayoutTemplate>
-                <table class="tbl">
+                <table>
                     <thead>
                         <tr>
                             <td>Hotel Name</td>
