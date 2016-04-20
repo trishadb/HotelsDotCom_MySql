@@ -216,6 +216,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\Raleway-Regular.ttf" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Properties\PublishProfiles\pub_HotelsDotCom.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
@@ -399,6 +400,8 @@
     <Compile Include="AvailableHotels.aspx.designer.cs">
       <DependentUpon>AvailableHotels.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cities.cs" />
+    <Compile Include="Clone.cs" />
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -421,6 +424,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Hotel.cs" />
+    <Compile Include="HotelCapacityFactory.cs" />
     <Compile Include="HotelCapacityInDestination.cs" />
     <Compile Include="HotelRoomQuantity.cs" />
     <Compile Include="HotelRoomQuantityList.cs" />

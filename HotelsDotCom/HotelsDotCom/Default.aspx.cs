@@ -13,8 +13,9 @@ namespace HotelsDotCom
         DBMgr db;
         protected void Page_Load(object sender, EventArgs e)
         {
-            db = DBMgr.getInstance();
-            ArrayList cities = db.getCities();
+            //db = DBMgr.getInstance();
+            //ArrayList cities = db.getCities();
+            ArrayList cities = Cities.getCities();
             if (!IsPostBack)
             {
 

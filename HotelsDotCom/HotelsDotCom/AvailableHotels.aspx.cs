@@ -27,8 +27,8 @@ namespace HotelsDotCom
             if (!IsPostBack)
             {
                 //get hotels by destination
-                hotels = dbm.getHotelCapacityByDes(destination);
-
+                //hotels = dbm.getHotelCapacityByDes(destination);
+                hotels = Clone.cloneHotels( HotelCapacityFactory.getFactory().getHotelsByDestination(destination).getHotelCapacityByDestination());
                 lblDestination.Text = destination;
                 lblStart.Text = starting;
                 lblEnd.Text = ending;
@@ -83,6 +83,7 @@ namespace HotelsDotCom
         {
             List<HotelRoomQuantity> tempHotels = new List<HotelRoomQuantity>();
             List<HotelRoomQuantity> hotel_occupied = dbm.getHotelCapacityByDes(destination);
+            //List<HotelRoomQuantity> hotel_occupied = Clone.cloneHotels(HotelCapacityFactory.getFactory().getHotelsByDestination(destination).getHotelCapacityByDestination());
             foreach (HotelRoomQuantity room in hotel_occupied)
             {
                 room.Quantity = 0;

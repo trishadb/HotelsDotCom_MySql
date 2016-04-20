@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelsDotCom", "HotelsDotCom\HotelsDotCom.csproj", "{33A65F91-D8C0-4C97-9541-139FECC085CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelsDotCom.Tests", "HotelsDotCom.Tests\HotelsDotCom.Tests.csproj", "{9914AC17-F645-4AE4-ADEB-368C3111D704}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87DC6D3C-91AA-4081-B264-C73B924571FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
